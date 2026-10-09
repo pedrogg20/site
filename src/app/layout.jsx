@@ -4,14 +4,14 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alex Rivera - Graphic Designer Portfolio",
+  title: "Pedro Elias - Portfólio de Designer Gráfico",
   description:
-    "Creative graphic designer specializing in brand identity, web design, and digital experiences.",
+    "Designer gráfico criativo especializado em identidade visual, design web e experiências digitais.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth">
       <body className={inter.className}>{children}</body>
     </html>
   );

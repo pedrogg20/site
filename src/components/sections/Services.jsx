@@ -13,76 +13,76 @@ const Services = () => {
   const services = [
     {
       icon: Palette,
-      title: "Brand Identity Design",
+      title: "Design de Identidade Visual",
       description:
-        "Complete brand identity solutions including logo design, color palettes, typography, and brand guidelines.",
+        "Soluções completas de identidade visual incluindo design de logotipo, paletas de cores, tipografia e diretrizes de marca.",
       features: [
-        "Logo Design",
-        "Brand Guidelines",
-        "Color Schemes",
-        "Typography",
+        "Design de Logotipo",
+        "Diretrizes de Marca",
+        "Paletas de Cores",
+        "Tipografia",
       ],
-      price: "Starting at $1,500",
+      price: "A partir de R$ 1.500",
     },
     {
       icon: Monitor,
-      title: "Web Design",
+      title: "Design Web",
       description:
-        "Modern, responsive website designs that provide exceptional user experiences across all devices.",
+        "Designs de sites modernos e responsivos que proporcionam experiências excepcionais em todos os dispositivos.",
       features: [
-        "Responsive Design",
-        "UI/UX Design",
-        "Prototyping",
-        "User Testing",
+        "Design Responsivo",
+        "Design UI/UX",
+        "Prototipagem",
+        "Testes de Usabilidade",
       ],
-      price: "Starting at $2,500",
+      price: "A partir de R$ 2.500",
     },
     {
       icon: FileText,
-      title: "Print Design",
+      title: "Design de Impressão",
       description:
-        "High-quality print materials including brochures, flyers, business cards, and marketing collateral.",
+        "Materiais impressos de alta qualidade incluindo brochuras, folhetos, cartões de visita e materiais de marketing.",
       features: [
-        "Brochures",
-        "Business Cards",
-        "Posters",
-        "Marketing Materials",
+        "Brochuras",
+        "Cartões de Visita",
+        "Pôsteres",
+        "Materiais de Marketing",
       ],
-      price: "Starting at $500",
+      price: "A partir de R$ 500",
     },
     {
       icon: Smartphone,
-      title: "Mobile App Design",
+      title: "Design de Aplicativos Mobile",
       description:
-        "Intuitive mobile app interfaces designed for optimal user engagement and conversion.",
-      features: ["iOS Design", "Android Design", "User Flows", "Prototyping"],
-      price: "Starting at $3,000",
+        "Interfaces intuitivas de aplicativos móveis projetadas para engajamento e conversão ótima do usuário.",
+      features: ["Design iOS", "Design Android", "Fluxos de Usuário", "Prototipagem"],
+      price: "A partir de R$ 3.000",
     },
     {
       icon: Package,
-      title: "Packaging Design",
+      title: "Design de Embalagem",
       description:
-        "Eye-catching packaging solutions that stand out on shelves and communicate brand values.",
+        "Soluções de embalagem atraentes que se destacam nas prateleiras e comunicam os valores da marca.",
       features: [
-        "Product Packaging",
-        "Label Design",
-        "Box Design",
-        "3D Mockups",
+        "Embalagem de Produto",
+        "Design de Rótulos",
+        "Design de Caixas",
+        "Mockups 3D",
       ],
-      price: "Starting at $800",
+      price: "A partir de R$ 800",
     },
     {
       icon: Users,
-      title: "Consultation & Strategy",
+      title: "Consultoria e Estratégia",
       description:
-        "Design consultation and strategic planning to align your visual identity with business goals.",
+        "Consultoria de design e planejamento estratégico para alinhar sua identidade visual aos objetivos comerciais.",
       features: [
-        "Design Audit",
-        "Strategy Planning",
-        "Brand Positioning",
-        "Market Research",
+        "Auditoria de Design",
+        "Planejamento Estratégico",
+        "Posicionamento de Marca",
+        "Pesquisa de Mercado",
       ],
-      price: "Starting at $200/hour",
+      price: "A partir de R$ 200/hora",
     },
   ];
 
@@ -91,11 +91,11 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            My Services
+            Meus Serviços
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I offer comprehensive design services to help your brand stand out
-            and connect with your audience.
+            Ofereço serviços abrangentes de design para ajudar sua marca a se destacar
+            e se conectar com seu público.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ const Services = () => {
                 </div>
 
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                  Get Started
+                  Começar Agora
                 </Button>
               </CardContent>
             </Card>
@@ -143,15 +143,15 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-6">
-            Need a custom solution? Let&apos;s discuss your specific
-            requirements.
+            Precisa de uma solução personalizada? Vamos discutir suas
+            necessidades específicas.
           </p>
           <Button
             size="lg"
             variant="outline"
             className="border-purple-200 text-purple-700 hover:bg-purple-50"
           >
-            Schedule a Consultation
+            Agendar uma Consulta
           </Button>
         </div>
       </div>

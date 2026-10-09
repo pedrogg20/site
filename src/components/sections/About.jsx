@@ -10,38 +10,38 @@ const About = () => {
     "InDesign",
     "Illustrator",
     "Photoshop",
-    "Brand Identity",
-    "Web Design",
-    "Print Design",
-    "UI/UX Design",
-    "Typography",
-    "Color Theory",
+    "Identidade Visual",
+    "Design Web",
+    "Design Gráfico",
+    "Design UI/UX",
+    "Tipografia",
+    "Teoria das Cores",
   ];
 
   const features = [
     {
       icon: Palette,
-      title: "Creative Vision",
+      title: "Visão Criativa",
       description:
-        "Transforming ideas into visually compelling designs that resonate with target audiences.",
+        "Transformando ideias em designs visualmente atraentes que ressoam com o público-alvo.",
     },
     {
       icon: Lightbulb,
-      title: "Innovative Solutions",
+      title: "Soluções Inovadoras",
       description:
-        "Bringing fresh perspectives and cutting-edge design approaches to every project.",
+        "Trazendo perspectivas novas e abordagens de design de ponta para cada projeto.",
     },
     {
       icon: Target,
-      title: "Strategic Thinking",
+      title: "Pensamento Estratégico",
       description:
-        "Designing with purpose to achieve specific business goals and user objectives.",
+        "Projetando com propósito para alcançar objetivos comerciais e de usuário específicos.",
     },
     {
       icon: Award,
-      title: "Quality Excellence",
+      title: "Excelência em Qualidade",
       description:
-        "Delivering exceptional results with meticulous attention to detail and craftsmanship.",
+        "Entregando resultados excepcionais com atenção meticulosa aos detalhes e acabamento.",
     },
   ];
 
@@ -50,11 +50,11 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            About Me
+            Sobre Mim
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I&apos;m a passionate graphic designer with over 5 years of
-            experience creating impactful visual solutions for brands worldwide.
+            Sou um designer gráfico apaixonado com mais de 5 anos de
+            experiência criando soluções visuais impactantes para marcas em todo o mundo.
           </p>
         </div>
 
@@ -62,29 +62,29 @@ const About = () => {
           {/* Text Content */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Crafting Visual Stories That Matter
-            </h3>
-            <div className="space-y-4 text-gray-600">
-              <p>
-                With a keen eye for detail and a passion for storytelling
-                through design, I help businesses communicate their message
-                effectively through powerful visual narratives.
-              </p>
-              <p>
-                My approach combines strategic thinking with creative execution,
-                ensuring that every design not only looks beautiful but also
-                serves a purpose and drives results.
-              </p>
-              <p>
-                From brand identity to digital experiences, I create designs
-                that connect with audiences and leave lasting impressions.
-              </p>
-            </div>
+              Criando Histórias Visuais que Importam
+             </h3>
+             <div className="space-y-4 text-gray-600">
+               <p>
+                 Com um olhar apurado para detalhes e paixão por contar histórias
+                 através do design, ajudo empresas a comunicar sua mensagem
+                 de forma eficaz por meio de narrativas visuais poderosas.
+               </p>
+               <p>
+                 Minha abordagem combina pensamento estratégico com execução criativa,
+                 garantindo que cada design não apenas seja bonito, mas também
+                 cumpra um propósito e gere resultados.
+               </p>
+               <p>
+                 Da identidade visual às experiências digitais, crio designs
+                 que conectam com o público e deixam impressões duradouras.
+               </p>
+             </div>
 
             {/* Skills */}
             <div className="mt-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">
-                Skills & Expertise
+                Habilidades e Especialidades
               </h4>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
@@ -105,7 +105,7 @@ const About = () => {
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Creative workspace"
+                alt="Espaço de trabalho criativo"
                 className="w-full h-full object-cover"
               />
             </div>

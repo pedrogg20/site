@@ -29,21 +29,21 @@ const Hero = () => {
           <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
             <div className="mb-6">
               <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
-                👋 Welcome to my portfolio
+                👋 Bem-vindo ao meu portfólio
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                I&apos;m{" "}
+                Eu sou{" "}
                 <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  Alex Rivera
+                  Pedro Elias
                 </span>
                 <br />
                 <span className="text-3xl sm:text-4xl lg:text-5xl text-gray-700">
-                  Graphic Designer
+                  Designer Gráfico
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-                I create stunning visual experiences that captivate audiences
-                and bring brands to life through innovative design solutions.
+                Crio experiências visuais impressionantes que cativam o público
+                e dão vida às marcas por meio de soluções de design inovadoras.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ const Hero = () => {
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white group"
               >
-                View My Work
+                Ver Meu Trabalho
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
@@ -61,16 +61,16 @@ const Hero = () => {
                 className="border-purple-200 text-purple-700 hover:bg-purple-50"
               >
                 <Download className="mr-2 h-4 w-4" />
-                Download CV
+                Baixar CV
               </Button>
             </div>
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12">
               {[
-                { number: "150+", label: "Projects Completed" },
-                { number: "50+", label: "Happy Clients" },
-                { number: "5+", label: "Years Experience" },
+                { number: "150+", label: "Projetos Concluídos" },
+                { number: "50+", label: "Clientes Satisfeitos" },
+                { number: "5+", label: "Anos de Experiência" },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-2xl font-bold text-gray-900">
@@ -89,8 +89,8 @@ const Hero = () => {
                 {/* Main Profile Image */}
                 <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                   <img
-                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=500"
-                    alt="Alex Rivera - Graphic Designer"
+                    src="/img/pepe.jpg"
+                    alt="Pedro Elias - Designer Gráfico"
                     className="w-full h-full object-cover"
                   />
                 </div>

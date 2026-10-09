@@ -32,21 +32,21 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Email",
+      title: "E-mail",
       info: "alex@example.com",
-      description: "Send me an email anytime!",
+      description: "Envie-me um e-mail a qualquer momento!",
     },
     {
       icon: Phone,
-      title: "Phone",
+      title: "Telefone",
       info: "+1 (555) 123-4567",
-      description: "Call me for urgent projects",
+      description: "Ligue-me para projetos urgentes",
     },
     {
       icon: MapPin,
-      title: "Location",
+      title: "Localização",
       info: "New York, NY",
-      description: "Available for local meetings",
+      description: "Disponível para reuniões presenciais",
     },
   ];
 
@@ -55,11 +55,11 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Let&apos;s Work Together
+            Vamos Trabalhar Juntos
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to bring your vision to life? Get in touch and let&apos;s
-            create something amazing together.
+            Pronto para dar vida à sua visão? Entre em contato e vamos
+            criar algo incrível juntos.
           </p>
         </div>
 
@@ -95,12 +95,12 @@ const Contact = () => {
             {/* CTA Card */}
             <Card className="bg-gradient-to-br from-purple-500 to-blue-500 text-white">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-2">Quick Response</h3>
+                <h3 className="text-xl font-bold mb-2">Resposta Rápida</h3>
                 <p className="mb-4 opacity-90">
-                  I typically respond to all inquiries within 24 hours.
+                  Normalmente respondo a todas as consultas em até 24 horas.
                 </p>
                 <Button variant="secondary" className="w-full">
-                  Schedule a Call
+                  Agendar uma Ligação
                 </Button>
               </CardContent>
             </Card>
@@ -111,34 +111,34 @@ const Contact = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-gray-900">
-                  Send Me a Message
+                  Envie-me uma Mensagem
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <Label htmlFor="name">Full Name</Label>
+                      <Label htmlFor="name">Nome Completo</Label>
                       <Input
                         id="name"
                         name="name"
                         type="text"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Your name"
+                        placeholder="Seu nome"
                         required
                         className="mt-1"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="email">Email Address</Label>
+                      <Label htmlFor="email">Endereço de E-mail</Label>
                       <Input
                         id="email"
                         name="email"
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="your.email@example.com"
+                        placeholder="seu.email@exemplo.com"
                         required
                         className="mt-1"
                       />
@@ -146,27 +146,27 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      type="text"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      placeholder="What's this about?"
+                      <Label htmlFor="subject">Assunto</Label>
+                      <Input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="Sobre o que é?"
                       required
                       className="mt-1"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell me about your project..."
+                      <Label htmlFor="message">Mensagem</Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Conte-me sobre seu projeto..."
                       rows={6}
                       required
                       className="mt-1"
@@ -179,7 +179,7 @@ const Contact = () => {
                     className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
                   >
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    Enviar Mensagem
                   </Button>
                 </form>
               </CardContent>

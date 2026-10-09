@@ -10,72 +10,72 @@ const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const categories = [
-    "All",
-    "Brand Identity",
-    "Web Design",
-    "Print Design",
+    "Todos",
+    "Identidade Visual",
+    "Design Web",
+    "Design de Impressão",
     "UI/UX",
   ];
 
   const projects = [
     {
       id: 1,
-      title: "TechFlow Brand Identity",
-      category: "Brand Identity",
+      title: "TechFlow - Identidade Visual",
+      category: "Identidade Visual",
       image:
         "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Complete brand identity design for a modern tech startup",
-      tags: ["Branding", "Logo Design", "Visual Identity"],
+      description: "Design completo de identidade visual para uma startup de tecnologia moderna",
+      tags: ["Branding", "Design de Logotipo", "Identidade Visual"],
     },
     {
       id: 2,
-      title: "EcoGreen Website",
-      category: "Web Design",
+      title: "Site EcoGreen",
+      category: "Design Web",
       image:
         "https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Responsive website design for environmental organization",
-      tags: ["Web Design", "UI/UX", "Responsive"],
+      description: "Design de site responsivo para organização ambiental",
+      tags: ["Design Web", "UI/UX", "Responsivo"],
     },
     {
       id: 3,
-      title: "Artisan Coffee Packaging",
-      category: "Print Design",
+      title: "Embalagem de Café Artesanal",
+      category: "Design de Impressão",
       image:
         "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Premium coffee packaging design with elegant typography",
-      tags: ["Packaging", "Print Design", "Typography"],
+      description: "Design de embalagem de café premium com tipografia elegante",
+      tags: ["Embalagem", "Design de Impressão", "Tipografia"],
     },
     {
       id: 4,
-      title: "FitTracker Mobile App",
+      title: "Aplicativo FitTracker",
       category: "UI/UX",
       image:
         "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Intuitive mobile app interface for fitness tracking",
-      tags: ["Mobile App", "UI/UX", "User Experience"],
+      description: "Interface intuitiva de aplicativo móvel para acompanhamento fitness",
+      tags: ["Aplicativo Mobile", "UI/UX", "Experiência do Usuário"],
     },
     {
       id: 5,
-      title: "Luxury Hotel Branding",
-      category: "Brand Identity",
+      title: "Branding de Hotel de Luxo",
+      category: "Identidade Visual",
       image:
         "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Sophisticated branding for boutique hotel chain",
-      tags: ["Branding", "Luxury Design", "Hospitality"],
+      description: "Branding sofisticado para rede de hotéis boutique",
+      tags: ["Branding", "Design de Luxo", "Hospitalidade"],
     },
     {
       id: 6,
-      title: "Festival Poster Series",
-      category: "Print Design",
+      title: "Série de Pôsteres de Festival",
+      category: "Design de Impressão",
       image:
         "https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Eye-catching poster designs for music festival",
-      tags: ["Poster Design", "Event Design", "Typography"],
+      description: "Designs de pôsteres atraentes para festival de música",
+      tags: ["Design de Pôsteres", "Design de Eventos", "Tipografia"],
     },
   ];
 
   const filteredProjects =
-    activeFilter === "All"
+    activeFilter === "Todos"
       ? projects
       : projects.filter((project) => project.category === activeFilter);
 
@@ -84,11 +84,11 @@ const Portfolio = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            My Portfolio
+            Meu Portfólio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Explore my latest design projects and creative solutions that have
-            helped brands tell their stories.
+            Explore meus projetos de design mais recentes e soluções criativas que
+            ajudaram marcas a contar suas histórias.
           </p>
 
           {/* Filter Buttons */}
@@ -131,7 +131,7 @@ const Portfolio = () => {
                       className="bg-white text-gray-900 hover:bg-gray-100"
                     >
                       <Eye className="h-4 w-4 mr-1" />
-                      View
+                      Ver
                     </Button>
                     <Button
                       size="sm"
@@ -139,7 +139,7 @@ const Portfolio = () => {
                       className="bg-white text-gray-900 hover:bg-gray-100"
                     >
                       <ExternalLink className="h-4 w-4 mr-1" />
-                      Live
+                      Online
                     </Button>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ const Portfolio = () => {
 
         <div className="text-center mt-12">
           <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-            View All Projects
+            Ver Todos os Projetos
           </Button>
         </div>
       </div>

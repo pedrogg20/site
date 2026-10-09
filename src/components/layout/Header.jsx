@@ -18,11 +18,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#services", label: "Services" },
-    { href: "#contact", label: "Contact" },
+    { href: "#home", label: "Início" },
+    { href: "#about", label: "Sobre" },
+    { href: "#portfolio", label: "Portfólio" },
+    { href: "#services", label: "Serviços" },
+    { href: "#contact", label: "Contato" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Header = () => {
               href="#home"
               className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
             >
-              Alex Rivera
+              Pedro Elias
             </a>
           </div>
 
@@ -63,7 +63,7 @@ const Header = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
             <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-              Let&apos;s Work Together
+              Vamos Trabalhar Juntos
             </Button>
           </div>
 
@@ -95,8 +95,8 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                  Let&apos;s Work Together
+                  <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                  Vamos Trabalhar Juntos
                 </Button>
               </div>
             </div>
