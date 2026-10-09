@@ -32,4 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-          cname: pedrogg20.github.io
+          target_branch: main
+          keep_files: false
