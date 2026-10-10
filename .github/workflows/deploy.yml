@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -11,27 +11,21 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    concurrency:
-      group: pages-deploy-${{ github.ref }}
-      cancel-in-progress: true
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
-      - name: Build
-        run: pnpm build-only
+      - name: Build static
+        run: next build && next export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -39,5 +33,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           target_branch: main
-          force_orphan: true
           keep_files: false
+          force_orphan: true
