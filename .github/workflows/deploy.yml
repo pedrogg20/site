@@ -1,17 +1,16 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
       id-token: write
-
     concurrency:
       group: pages-deploy-${{ github.ref }}
       cancel-in-progress: true
@@ -28,9 +27,6 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Enable corepack
-        run: corepack enable
-
       - name: Install dependencies
         run: pnpm install
 
@@ -43,5 +39,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           target_branch: main
-          keep_files: false
           force_orphan: true
+          keep_files: false
